@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+  	font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+  	font-size: 16px;
+  	line-height: 1.7;
+  	color: #eee;
+}
+
+header {
+  background-color: #33C1FF;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+footer {
+  background-color: #33C1FF;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+.brand-box {
+  	position: absolute;
+  	top: 40px;
+  	left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.heading-primary {
+  	color: #fff;
+  	text-transform: uppercase;
+
+  	backface-visibility: hidden;
+  	margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  	display: block;
+  	font-size: 26px;
+  	font-weight: 400;
+  	letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  	display: block;
+  	font-size: 18px;
+  	font-weight: 700;
+  	letter-spacing: 7.4px;
+}
+
+.btn:visited {
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	padding: 10px 20px;
+  	display: inline-block;
+  	border-radius: 100px;
+  	transition: all .2s;
+  	position: relative;
+}
+
+.btn:hover {
+  	transform: translateY(-3px);
+  	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  	transform: translateY(-1px);
+  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  	background-color: #fff;
+  	color: #777;
+	font-size: 14px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    max-length: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+}
+
+.column img:hover{
+  opacity: 1;
+  transition: 0.3s;
+}
+.button {
+  background-color: #33C1FF; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.button1 {
+background-color: #33C1FF; /* Green */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 20px 4px;
+cursor: pointer;
+border-radius: 8px;
+transition-duration: 0.4s;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+  box-shadow: 0 12px 22px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #33C1FF;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+
+<head>
+  <title>Much Love - Steven</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+
+<header>
+  <h2></h2>
+</header>
+
+<div align="center">
+<a href="gallery1.html" class="button">1</a>
+<a href="gallery2.html" class="button">2</a>
+<a href="gallery3.html" class="button">3</a>
+<a href="gallery4.html" class="button">4</a>
+<a href="gallery5.html" class="button1">5</a>
+<a href="gallery6.html" class="button">6</a>
+<a href="gallery7.html" class="button">7</a>
+<a href="gallery8.html" class="button">8</a>
+<a href="gallery9.html" class="button">9</a>
+<a href="gallery10.html" class="button">10</a>
+</div>
+
+<div class="row">
+<div class="column">
+    <div class="container">
+      <img src="images/33.jpg" alt="Avatar" class="image" style="width:100%;length:25%;">
+      <div class="middle">
+        <div class="text">Vday Choco Cake</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="images/34.jpg" alt="Avatar" class="image" style="width:100% length:25%">
+      <div class="middle">
+        <div class="text">Vday Dinner</div>
+      </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="container">
+      <img src="images/35.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Vday flowers</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="images/36.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Happi BF and GF</div>
+      </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="container">
+      <img src="images/37.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">BF Facebook Pic</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="images/38.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Xmas festivities</div>
+      </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="container">
+      <img src="images/39.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Wakanda</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="images/40.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Wedding Time Couple</div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div align="center">
+<a href="gallery1.html" class="button">1</a>
+<a href="gallery2.html" class="button">2</a>
+<a href="gallery3.html" class="button">3</a>
+<a href="gallery4.html" class="button">4</a>
+<a href="gallery5.html" class="button1">5</a>
+<a href="gallery6.html" class="button">6</a>
+<a href="gallery7.html" class="button">7</a>
+<a href="gallery8.html" class="button">8</a>
+<a href="gallery9.html" class="button">9</a>
+<a href="gallery10.html" class="button">10</a>
+</div>
+<footer>
+  <p></p>
+</footer>
