@@ -25,7 +25,7 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #EEEEEE;
+            background-color: pink;
         }
         
         #dialogWrapCell {
@@ -76,7 +76,6 @@
         #success {
             color: green;
         }
-        
         #submitPass {
             font-size: 20px;
             border: none;
@@ -90,11 +89,6 @@
             font-size: 16px;
             transition-duration: 0.4s;
         }
-        #submitPass:hover {
-            background-color: PINK; /* Green */
-            color: white;    
-        }
-
         #contentFrame {
             position: absolute;
             top: 0;
@@ -109,9 +103,9 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">Where did we first meet?</div>
+                <div id="dialogText">What event did we first meet?</div>
                 <div id="passArea">
-                    <p id="passwordPrompt">Enter Code Here</p>
+                    <p id="passwordPrompt">Password</p>
                     <input id="pass" type="password" name="pass">
                     <div>
                         <span id="messageWrapper">
@@ -259,7 +253,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
         }( this, this.document ));
     </script>
     <script>
-        var pl = {"salt":"mAALdFAv2T1Es3sZiMP/OFKNyT0pM1Pm6jptI6gXjtY=","iv":"Mcya55pCdgcQfcF3nmHGKA==","data":"HYPqlZVFOFs80lphGp4MC8uK27xVSWbs7DY2Iww/SeWSx6Y8ymvQND9YZ/xSWziENNMmgDB8MJoERB52sUf3tmgMFc9+wluzxx1IMbfY2Q8pjFH8ONLh+gr9DgWqg8NvI/ENLkw9mLbQs5R4+Ui13QO+gyDfFrKYYjlB8nNuqBsGIBF+CHGV4/SXWW55snpmYfkQufz0ckYstmVW4p7wzreaNwkDaOE0c9XzqbVDK8gomRFQ6YjXO6cHT+GkGkWS17UmjhhjUGM1q+cVCoputNb0kExtUpVlkK9XI/nPrIUI0wPgBS83/ln0sdJLYVApKTD0ayiLriuxv+VeZVzhh13wG19rpOaguFZ21OdCRtyygV30I3HOkyh3M1F6DHdNv/BazLikQDvwuiJqL1AOpfC+QaeD2Ns2G+5FyvkOVRjdfMi30R8ZLz8pBIuuxPowv9e3HV6hegtq5IrR1jYSXwWG52PKHaPJb27qjY+XgJ26koYhgrDww5Iy8LVFBUN2gNIjQEf0iI7ifyEUHTmIM8ahUwaNTA2JuHcSamrhSttP31ngZmYnZl3qsI7DhME2DZU9wxcJL2v6LXPXRTTij7zsWR7nzJ/9k0XnI8QUaew="};
+        var pl = {"salt":"4mzdKugbInihYEtW7lMFTnVCnnRXEtGYDknAWPPjh1U=","iv":"t1+UlRvouL7irFScEN6T0w==","data":"0pgjsuZ/8CD2VtzC8nlI5uIbVKPpvZZbiC6ju7Uyr2b3AKcwGjnhllZpteUvQVpOcDKw/FSDS11cXTHKxKo53nH1cRYhkmtQua+2ZvnrDYfegw2O8CfvjhnzjyPuinFjwCC+D1CdB1W0pT5vaRAW2jPAuxAbH4YkSYWTdrgw2VtqJ0fnIHcC/6lHqUIQxjofczLz82cGpQyN0cl1t4SWkE+I8OEWIAddcTWRhYhs8QOaod63b/e2e5+xqh287TNpooo//sA4BRgS2IXYt94cvQyP68ORlkHpoMeu6QazGPUn4avh5lw057OvEBF6gIaXUd+W0GM9pzB5IK5luhhuujjtEBpYfkJ/fjyaSGJWi1tW9sZTkKzYVb9fxpZhSb5335UQkKJ7ptPqNFT1BmO2iomEckBly9ZmN/jGs/VguxAOyxdJz989cb0KlYlIHl884E/zkQUmCm4POMPFr1gBbHY8cRrjTXw/MYewNS/xp/MvpTLKvx7+fTzS6cviRxNNLPjrAYEnYKa/rWuyHO6oUtlCVsTFK5TsFEWs6j27BcGIvJoULddIP+nY304ScFYxAJc+myK5h7EzpwDs9rbS5q+UxQAdwcfif/3Vwlbtmi1WSPYiGRsU0FeX3bn2wFopROQu8MSF+Vw+pwNydd3iIgUEGzSc6RdDKjsVzzhLiWXArEJJktQfYJZ8HpmwoN+/2LlCrvePGcFt0F9nAAVMUQ4xgTJMDx3SPzvtb2f28K/d1kZzf+LM0K7Gi/UOV5hHMUUXHmvcUvEp1VD+bpqEKpIy8PmPflRawQN10zIL+Ku706SByRgyAU6359FEonk3nLdGoRis3qSywerzbkz4W5g0hrDwY/+xGajpiyBhSP3CzKXshOPvFi8V2iGsO453"};
         
         var submitPass = document.getElementById('submitPass');
         var passEl = document.getElementById('pass');
